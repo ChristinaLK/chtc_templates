@@ -1,0 +1,3 @@
+#!/bin/bash
+
+condor_q ckoch5 -constraint 'JobStatus == 5' -af ClusterId ProcId HoldReason

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+condor_status $1 -constraint 'Memory > 100000' -af Name Cpus Memory Disk RemoteUser | sort -k 3 -n
