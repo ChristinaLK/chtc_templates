@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "Currently waiting"
+condor_q -all -constraint 'RequestMemory > 100000 && JobStatus == 1' -af Owner RequestCpus RequestMemory RequestDisk
+echo "Currently running"
+condor_q -all -constraint 'RequestMemory > 100000 && JobStatus == 2' -af Owner RequestCpus RequestMemory RequestDisk RemoteHost
