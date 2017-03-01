@@ -1,0 +1,14 @@
+universe = vanilla
+log = int_$(Cluster).log
+#error = int_$(Cluster).err
+#output = _int$(Cluster).out
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+# transfer_input_files = /path/to/file1,/path/to/file2,etc
+
+request_cpus = 1
+request_memory = 1GB
+request_disk = 1GB
+
+queue 1
