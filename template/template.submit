@@ -1,0 +1,18 @@
+universe = vanilla
+log = logs/$(Cluster)_$(Process).log
+error = logs/$(Cluster)_$(Process).err
+
+executable = hello.sh
+# arguments = $(Process)
+output = $(Cluster)_$(Process).out
+
+#initialdir = 
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files = input.txt
+
+request_cpus = 1
+request_memory = 1GB
+request_disk = 1GB
+
+queue
