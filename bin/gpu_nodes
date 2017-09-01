@@ -1,0 +1,3 @@
+#!/bin/bash
+
+condor_status -constraint 'TotalGpus > 0' -compact -af Machine OpSysAndVer TotalGpus CUDADeviceName CUDARuntimeVersion $*
