@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo /usr/local/infscripts/condor/memory_use.py | less
