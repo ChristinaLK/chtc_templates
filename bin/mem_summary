@@ -4,5 +4,5 @@ for mem in mem1 mem2 mem3 wid-003
 do
 echo $mem
 echo Total CPUs - Total Mem - Total Disk
-condor_status $mem -af TotalCpus TotalMemory TotalDisk | uniq
+condor_status $mem -compact -af TotalCpus TotalMemory TotalDisk
 done
