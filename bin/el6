@@ -1,0 +1,3 @@
+#!/bin/bash
+condor_q -allusers -const 'regexp("OpSysMajorVer == 6\\)\\)",unparse(requirements))'
+
